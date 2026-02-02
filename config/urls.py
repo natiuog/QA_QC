@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('telegram/', include('telegram_bot.urls')),
+    path('', include('telegram_bot.urls')),
 ]
 
 # Serve media files during development
