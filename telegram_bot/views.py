@@ -22,7 +22,7 @@ from openpyxl.styles import Font, Alignment
 from openpyxl.utils import get_column_letter
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, MessageHandler, filters, ContextTypes, CommandHandler, CallbackQueryHandler
-from google import generativeai
+import google.generativeai as genai
 from .models import Document, DocumentType
 
 logger = logging.getLogger(__name__)
